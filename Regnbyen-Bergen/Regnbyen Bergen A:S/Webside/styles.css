@@ -1,0 +1,207 @@
+body {
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.team__kolonne {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.team__kort {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.om_oss {
+  padding: 50px;
+  text-align: center;
+  background-color: #717f89;
+  color: white;
+}
+
+.team__kontainer {
+  padding: 0 16px;
+}
+
+.team__kontainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button__kontakt {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #32498f;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+.button__kontakt:hover {
+  background-color: #515dae;
+  border-radius: 5px;
+}
+
+.button__kontakt a {
+    text-decoration: none;
+    color: white;
+    width: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .team__kollone {
+    width: 100%;
+    display: block;
+  }
+}
+
+.navbar {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background-color: rgb(30, 50, 65);
+    width: 100%;
+}
+
+.content__all {
+    position: relative;
+}
+
+.title {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;;
+}
+
+.content__h1 {
+    color: rgb(30, 50, 65);
+    font-size: 18px;
+    margin: 20px;
+    top: 0px;
+    position: relative;
+    height: 125px; /* Just for demonstration to enable scrolling */
+    width: 45%;
+    background-image: url(Webside/assets/bakgrunn.jpeg);
+    background-size: cover;
+}
+
+.content__h2 {
+    height: 1500px; /* Just for demonstration to enable scrolling */
+}
+
+.footer {
+    background-color: rgb(30, 50, 65);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+.dropbtn {
+    background-color: rgb(70, 90, 105); /* Bakgrunnsfarge for knappen */
+    color: white; /* Tekstfarge */
+    padding: 10px 20px; /* Padding rundt teksten */
+    font-size: 16px; /* Fontstørrelse */
+    border: 1px solid black; /* Fjerner standard kantlinje */
+    cursor: pointer; /* Endrer musepekeren til en peker ved hover */
+    width: 100%; 
+    border-radius: 8px;
+}
+
+.dropdown {
+  position: relative; /* Nødvendig for å posisjonere innholdet */
+  display: inline-block; /* Lar elementet oppføre seg som en knapp */
+  position: absolute;
+  top: 36px;
+}
+
+.dropdown-content {
+  display: none; /* Skjuler menyen som standard */
+  position: absolute; /* Plasserer den over andre elementer */
+  background-color: rgb(30, 50, 65); /* Bakgrunnsfarge */
+  min-width: 160px; /* Minimum bredde på menyen */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Skygge for penere utseende */
+  z-index: 1; /* Sikrer at menyen vises over annet innhold */
+}
+
+.dropdown-content a {
+  color: white; /* Farge på lenkene */
+  padding: 12px 16px; /* Padding for lenkene */
+  text-decoration: none; /* Fjerner understreking */
+  display: block; /* Lar lenkene oppføre seg som blokkelementer */
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(80, 130, 174); /* Bakgrunnsfarge ved hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* Viser menyen når du holder musepekeren over containeren */
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #2453df;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #2b3db0;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.logo__top {
+    height: 50px; /* Juster høyden etter behov */
+    width: auto; /* Bevarer bildeforholdet */
+    vertical-align: middle; /* Justerer logoen vertikalt med teksten */
+    margin-right: 10px; /* Litt mellomrom mellom logoen og teksten */
+    align-content: center;
+    background-color: thistle;
+}
+
