@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <h1 class="title">Regnbyen Bergen A/S</h1>
+            <div class="dropdown">
+            <button class="dropbtn">Meny</button>
+                 <div class="dropdown-content">
+                    <a href="Landing page.html">Hjem</a>
+                     <a href="Utstyr.html">Produktside</a>
+                    <a href="om oss.html">Om oss</a>
+                    <a href="Ta kontakt.html">Ta kontakt</a>
+                </div>
+</div>
+        </div>
+
+    <div calss="content__all">
+              <div class="content__h1">
+                <h2>Ta Kontakt</h2>
+        </div>
+
+        <div class="container">
+  <form action="Landing page.html">
+
+    <label for="fname">Fullt navn</label>
+    <input type="text" id="fname" name="firstname" placeholder="Fullt navn..">
+
+    <label for="lname">E-post</label>
+    <input type="text" id="lname" name="lastname" placeholder="@..">
+
+    <label for="tilhørighet">Hvem er du?</label>
+    <select id="tilhørighet" name="tilhørighet">
+      <option value="student">Student</option>
+      <option value="virksomhet">Virksomhet</option>
+      <option value="Privatperson">Privatperson</option>
+    </select>
+
+    <label for="subject">Kontakt årsak</label>
+    <textarea id="subject" name="subject" placeholder="Skriv noe.." style="height:200px"></textarea>
+    <div class="submitiotn">
+        <button type="submit" onclick="showAlert()">Send inn
+            <a href="Landing page.html"> </a>
+        </button>
+        <script>
+            function showAlert() {
+                alert("Takk for din henvendelse! Vi vil kontakte deg så snart som mulig.");
+            }
+        </script>
+    </div>
+  </form>
+</div>
+
+        <div class="footer">
+            <p>&copy; 2024 Regnbyen Bergen A/S. Alle rettigheter reservert.</p>
+        </div>  
+    </body>
+</html>
